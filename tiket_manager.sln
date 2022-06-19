@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32505.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainManagerUI", "TrainManagerUI\TrainManagerUI.csproj", "{331569A1-3F06-4E1E-93D3-8BE978DF1EE3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{331569A1-3F06-4E1E-93D3-8BE978DF1EE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{331569A1-3F06-4E1E-93D3-8BE978DF1EE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{331569A1-3F06-4E1E-93D3-8BE978DF1EE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{331569A1-3F06-4E1E-93D3-8BE978DF1EE3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {81AD48F7-420F-4D49-B635-115FADF2A68E}
+	EndGlobalSection
+EndGlobal
