@@ -1,6 +1,6 @@
 using Dapper.Contrib.Extensions;
 
-namespace TicketManagerLibrary.Model
+namespace DapabaseLibrary.Model
 {
     [Table("Passport")]
     public class Passport
@@ -27,11 +27,11 @@ namespace TicketManagerLibrary.Model
         }
 
         [Key] public int Id { get; set; }
-        public string? Issue_place { get; set; }
+        public string Issue_place { get; set; }
         public int Serial_number { get; set; }
-        public string? Surname { get; set; }
-        public string? Father_name { get; set; }
-        public string? Name { get; set; }
+        public string Surname { get; set; }
+        public string Father_name { get; set; }
+        public string Name { get; set; }
         public int Staff_id { get; set; }
 
 

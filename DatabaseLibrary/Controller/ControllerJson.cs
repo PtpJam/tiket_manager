@@ -1,6 +1,8 @@
 using Newtonsoft.Json;
+using System;
+using System.IO;
 
-namespace TicketManagerLibrary.Controller
+namespace DapabaseLibrary.Controller
 {
     public class ControllerJson
     {
@@ -9,7 +11,7 @@ namespace TicketManagerLibrary.Controller
             m_jsonModel = JsonConvert.DeserializeObject<JsonModel>(File.ReadAllText(filename));
         }
 
-        private JsonModel? m_jsonModel;
+        private JsonModel m_jsonModel;
         public JsonModel jsonModel { 
             get { 
 

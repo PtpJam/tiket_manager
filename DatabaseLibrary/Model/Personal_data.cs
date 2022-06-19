@@ -1,6 +1,6 @@
 ﻿using Dapper.Contrib.Extensions;
 
-namespace TicketManagerLibrary.Model
+namespace DapabaseLibrary.Model
 {
     [Table("Personal_data")]
     public class Personal_data

@@ -1,6 +1,6 @@
 using Dapper.Contrib.Extensions;
 
-namespace TicketManagerLibrary.Model
+namespace DapabaseLibrary.Model
 {
     [Table("Staff_type")]
     public class Staff
@@ -18,7 +18,7 @@ namespace TicketManagerLibrary.Model
         }
 
         [Key] public int Id { get; set; }
-        public string? Name { get; set;}
+        public string Name { get; set;}
 
         public override string ToString()
         {

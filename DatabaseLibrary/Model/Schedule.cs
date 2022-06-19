@@ -1,6 +1,6 @@
 using Dapper.Contrib.Extensions;
 
-namespace TicketManagerLibrary.Model
+namespace DapabaseLibrary.Model
 {
     [Table("Schedule")]
     public class Schedule
@@ -28,8 +28,8 @@ namespace TicketManagerLibrary.Model
         public int Trip { get; set; }
         public int Train { get; set; }
         public int Track { get; set; }
-        public string? Departure { get; set; }
-        public string? Arrival { get; set; }
+        public string Departure { get; set; }
+        public string Arrival { get; set; }
 
 
         // TODO: Implement table data

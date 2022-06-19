@@ -1,9 +1,9 @@
 using Dapper.Contrib.Extensions;
 using System.Data.SqlClient;
 using System.Threading;
-using TicketManagerLibrary.Controller.Json;
+using DapabaseLibrary.Controller;
 
-namespace TicketManagerLibrary.Controller
+namespace DapabaseLibrary.Controller
 {
     public class DatabaseConnection
     {
@@ -14,7 +14,7 @@ namespace TicketManagerLibrary.Controller
 
         public SqlConnection connection { get; set; }
 
-        private static DatabaseConnection? _DatabaseConnection;
+        private static DatabaseConnection _DatabaseConnection;
 
         private static readonly object _lock = new object();
 

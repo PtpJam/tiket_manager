@@ -1,6 +1,6 @@
 using Dapper.Contrib.Extensions;
 
-namespace TicketManagerLibrary.Model
+namespace DapabaseLibrary.Model
 {
     [Table("Carriage_type")]
     public class Carriage_type
@@ -18,7 +18,7 @@ namespace TicketManagerLibrary.Model
         }
 
         [Key] public int Id { get; set; }
-        public string? Type { get; set; }
+        public string Type { get; set; }
 
         // TODO: Implement table data
     }

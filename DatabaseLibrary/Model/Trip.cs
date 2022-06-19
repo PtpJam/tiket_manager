@@ -1,6 +1,6 @@
 using Dapper.Contrib.Extensions;
 
-namespace TicketManagerLibrary.Model
+namespace DapabaseLibrary.Model
 {
     [Table("Trip")]
     public class Trip
@@ -10,9 +10,9 @@ namespace TicketManagerLibrary.Model
         
         public Trip(
             int Id, 
-            string? Destination,
-            string? From, 
-            string? Time_in_trip, 
+            string Destination,
+            string From, 
+            string Time_in_trip, 
             int Train_id
         )
         {
@@ -24,14 +24,14 @@ namespace TicketManagerLibrary.Model
         }
 
         [Key] public int Id { get; set; }
-        public string? Destination { get; set; }
-        public string? From { get; set; }
-        public string? Time_in_trip { get; set; }
+        public string Destination { get; set; }
+        public string From { get; set; }
+        public string Time_in_trip { get; set; }
         public int? Train_id { get; set; }
 
         public override string ToString()
         {
-            if (Train_id is not null)
+            if (Train_id != null)
                 return $"{Id,-20} {Destination,-5} {From,-5} {Time_in_trip,-5} {Train_id,-5}";
             else 
                 return "Class Train is null!";

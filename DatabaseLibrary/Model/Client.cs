@@ -1,6 +1,6 @@
 using Dapper.Contrib.Extensions;
 
-namespace TicketManagerLibrary.Model
+namespace DapabaseLibrary.Model
 {
     [Table("Client")]
     public class Client
@@ -23,7 +23,7 @@ namespace TicketManagerLibrary.Model
         [Key] public int Id { get; set; }
         public int Passport { get; set; }
         public int Phone_number { get; set; }
-        public string? Email { get; set; }
+        public string Email { get; set; }
 
         // TODO: Implement table data
     }

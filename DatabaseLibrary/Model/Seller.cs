@@ -1,6 +1,6 @@
 using Dapper.Contrib.Extensions;
 
-namespace TicketManagerLibrary.Model
+namespace DapabaseLibrary.Model
 {
     [Table("Seller")]
     public class Seller
@@ -11,7 +11,7 @@ namespace TicketManagerLibrary.Model
         public Seller(int Id, 
             string Login, 
             string Password, 
-            string? Last_login_time, 
+            string Last_login_time, 
             int Personal_data
         )
         {
@@ -23,9 +23,9 @@ namespace TicketManagerLibrary.Model
         }
 
         [Key] public int Id { get; set; }
-        public string? Login { get; set; }
-        public string? Password { get; set; }
-        public string? Last_login_time { get; set; }
+        public string Login { get; set; }
+        public string Password { get; set; }
+        public string Last_login_time { get; set; }
         public int Personal_data { get; set; }
 
         // TODO: Implement table data

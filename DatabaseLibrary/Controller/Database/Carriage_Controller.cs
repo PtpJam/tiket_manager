@@ -1,9 +1,9 @@
-﻿using TicketManagerLibrary.Model;
+﻿using DapabaseLibrary.Model;
 using Dapper.Contrib.Extensions;
 using System.Data.SqlClient;
-using System.Data.SqlClient;
+using System.Collections.Generic;
 
-namespace TicketManagerLibrary.Controller.Database
+namespace DapabaseLibrary.Controller.Database
 {
     public class Carriage_Controller
     {

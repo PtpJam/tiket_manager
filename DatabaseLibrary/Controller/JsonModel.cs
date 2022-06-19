@@ -1,4 +1,4 @@
-namespace TicketManagerLibrary.Controller
+namespace DapabaseLibrary.Controller
 {
     public class JsonModel
     {
@@ -14,11 +14,11 @@ namespace TicketManagerLibrary.Controller
             this.Password = Password;
         }
 
-        public string? Source { get; set; }
-        public string? Port { get; set; }
-        public string? DatabaseName { get; set; }
-        public string? UserId { get; set; }
-        public string? Password { get; set; }
+        public string Source { get; set; }
+        public string Port { get; set; }
+        public string DatabaseName { get; set; }
+        public string UserId { get; set; }
+        public string Password { get; set; }
 
         public override string ToString()
         {
