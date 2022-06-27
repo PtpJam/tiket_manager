@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+
 using System.Windows.Forms;
 
 namespace TrainManagerGUI
@@ -18,5 +19,27 @@ namespace TrainManagerGUI
                 t.ShowDialog();
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            using (View.TripForm t = new View.TripForm())
+            {
+                t.ShowDialog();
+            }
+        }
+
+        private void backgroundWorker1_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            using (View.ScheduleForm t = new View.ScheduleForm())
+            {
+                t.ShowDialog();
+            }
+        }
+
     }
 }
