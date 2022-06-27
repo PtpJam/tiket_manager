@@ -1,34 +1,33 @@
 ﻿using Dapper.Contrib.Extensions;
 using System.Data.SqlClient;
 using DapabaseLibrary.Model;
-using System.Data.SqlClient;
 using System.Collections.Generic;
 
 namespace DapabaseLibrary.Controller.Database
 {
-    public class Staff_Controller
+    public class Staff_type_Controller
     {
-        public Staff_Controller()
+        public Staff_type_Controller()
         {
             SqlConnection connection = new DatabaseConnection(new ControllerJson().jsonModel).connection;
 
-            StaffTypes = connection.GetAll<Staff>() as List<Staff>;
+            StaffTypes = connection.GetAll<Staff_type>() as List<Staff_type>;
             connection.Close();
         }
 
-        public void Add(Staff obj, SqlConnection connection)
+        public void Add(Staff_type obj, SqlConnection connection)
         {
             StaffTypes.Add(obj);
-            connection.Insert<Staff>(obj);
+            connection.Insert<Staff_type>(obj);
         }
 
-        public Staff this[int index]
+        public Staff_type this[int index]
         {
             get => StaffTypes[index];
             private set => StaffTypes[index] = value;
         }
 
-        public List<Staff> StaffTypes { get; private set; }
+        public List<Staff_type> StaffTypes { get; private set; }
         
     }
 }

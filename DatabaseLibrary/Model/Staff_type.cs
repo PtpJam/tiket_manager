@@ -3,12 +3,12 @@ using Dapper.Contrib.Extensions;
 namespace DapabaseLibrary.Model
 {
     [Table("Staff_type")]
-    public class Staff
+    public class Staff_type
     {
-        public Staff()
+        public Staff_type()
         {}
 
-        public Staff(
+        public Staff_type(
             int id, 
             string Staff_type
         )
